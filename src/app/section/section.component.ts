@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
-  present: string = '';
+  command: string = '';
 
   constructor() { }
 
-  startCount($event: string){
-    this.present = $event;
+  startCount($command: string){
+    this.command = $command;
   }
 
 

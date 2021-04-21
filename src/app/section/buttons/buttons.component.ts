@@ -13,17 +13,8 @@ export class ButtonsComponent implements OnInit {
 
   constructor() { }
 
-  startCount($event: MouseEvent){
-    console.log("start-btn")
-    this.clickEvent.emit('string');
-  }
-
-  stopCount($event: MouseEvent){
-    console.log("stop-btn")
-  }
-
-  resetCount($event: MouseEvent){
-    console.log("reset-btn")
+  executeCommand($command: MouseEvent){
+    this.clickEvent.emit($command);
   }
 
   ngOnInit(): void {
